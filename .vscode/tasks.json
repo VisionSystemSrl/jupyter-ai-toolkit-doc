@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "createSiteGithub",
+            "type": "shell",
+            "command": "./commands/createSiteGithub.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "createPDF",
+            "type": "shell",
+            "command": "./commands/createPDF.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+
+        {
+            "label": "createALL",
+            "type": "shell",
+            "command": "./commands/createAll.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+
+        {
+            "label": "deploySite",
+            "type": "shell",
+            "command": "./commands/utilities/completeDeploy.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
