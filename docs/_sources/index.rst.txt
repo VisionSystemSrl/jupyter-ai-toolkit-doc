@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to DemoDocumentation's documentation!
+Jupyter AI Toolkit
 =============================================
 
 Indices and tables
@@ -13,12 +13,12 @@ Indices and tables
 * :ref:`search`
 
 
-Contents:
+Contents
 ==================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Template Usage:
+   :caption: About
 
    README.md
 
@@ -26,14 +26,13 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Stardard Usage (demo):
+   :caption: Stardard Usage
 
    documentation/MyDoc1.md
-   documentation/MyDoc2.md
 
 .. toctree::
    :maxdepth: 2
-   :caption: Advanced Usage (demo):
+   :caption: Advanced Usage
 
    documentation/MyDoc3.md
    documentation/MyDoc4.md
