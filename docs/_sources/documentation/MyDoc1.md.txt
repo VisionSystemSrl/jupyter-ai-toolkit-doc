@@ -50,5 +50,3 @@ sys.path.append(os.environ['SNAP_DATA'])
 
 import cv2
 ```
-
-The following packages have been tested...
