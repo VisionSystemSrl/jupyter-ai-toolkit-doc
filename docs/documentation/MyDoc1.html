@@ -64,6 +64,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#start-and-stop-jupyter-lab">Start and Stop Jupyter Lab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#start-and-stop-your-python-project">Start and Stop your Python project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-persistence">Data persistence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#install-more-packages">Install more packages</a></li>
 </ul>
 </li>
@@ -113,6 +114,8 @@ You can access these pages from the ctrlX Dashboard sidebar as shown in the pict
 <h2>Start and Stop Jupyter Lab<a class="headerlink" href="#start-and-stop-jupyter-lab" title="Permalink to this heading"></a></h2>
 <p>To start the Jupyter Server, go to the Jupyter Manager page and click on the green Start button under the Manager Jupyter section as shown in the picture. Similarly you can stop the server by clicking the red Stop button.</p>
 <p><img alt="manager 1" src="../_images/manager-page-1.png" /></p>
+<p>Once the Jupyter Server is started, you can open Jupyter Lab by clicking on the Open button or from the Sidebar.</p>
+<p><img alt="jupyter lab" src="../_images/jupyter-lab.png" /></p>
 </section>
 <section id="start-and-stop-your-python-project">
 <h2>Start and Stop your Python project<a class="headerlink" href="#start-and-stop-your-python-project" title="Permalink to this heading"></a></h2>
@@ -125,10 +128,16 @@ You can access these pages from the ctrlX Dashboard sidebar as shown in the pict
 <p>The User Management is included in the ctrlX Automation Platform. You can manage your users under Settings &gt; Users &amp; Permissions &gt; Users, as shown in the picture below.</p>
 <p><img alt="user management" src="../_images/ctrlx-user-management.png" /></p>
 </section>
+<section id="data-persistence">
+<h2>Data persistence<a class="headerlink" href="#data-persistence" title="Permalink to this heading"></a></h2>
+<p>The app’s data is stored inside the Active configuration folder.</p>
+<p><img alt="data persistence" src="../_images/ctrlx-data-persistence.png" /></p>
+</section>
 <section id="install-more-packages">
 <h2>Install more packages<a class="headerlink" href="#install-more-packages" title="Permalink to this heading"></a></h2>
 <p>Jupyter AI Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
-If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON, SNAP_COMMON/solutions/activeConfiguration/mylibs.</p>
+If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON.
+If you want your packages to be backup together with the standard ctrlX mechanism, install them in the following folder or subfolder: <code class="docutils literal notranslate"><span class="pre">/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/jupyterlab</span></code>.</p>
 <p>For example, to install opencv you can run the following command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>pip3 install opencv-python -t $SNAP_DATA
 </pre></div>

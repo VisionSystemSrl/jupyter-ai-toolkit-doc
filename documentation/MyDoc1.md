@@ -10,6 +10,10 @@ To start the Jupyter Server, go to the Jupyter Manager page and click on the gre
 
 ![manager 1](./doc_img/manager-page-1.png)
 
+Once the Jupyter Server is started, you can open Jupyter Lab by clicking on the Open button or from the Sidebar.
+
+![jupyter lab](./doc_img/jupyter-lab.png)
+
 ## Start and Stop your Python project
 You can choose a python file to be executed when the app starts. To do so, place a python file named "app.py" inside a folder named "project", as shown in the following picture. 
 
@@ -22,10 +26,16 @@ The User Management is included in the ctrlX Automation Platform. You can manage
 
 ![user management](./doc_img/ctrlx-user-management.png)
 
+## Data persistence
+The app's data is stored inside the Active configuration folder. 
+
+![data persistence](./doc_img/ctrlx-data-persistence.png)
+
 
 ## Install more packages
 Jupyter AI Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
-If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON, SNAP_COMMON/solutions/activeConfiguration/mylibs.
+If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON.
+If you want your packages to be backup together with the standard ctrlX mechanism, install them in the following folder or subfolder: `/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/jupyterlab`. 
 
 For example, to install opencv you can run the following command:
 ```
