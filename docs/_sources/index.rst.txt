@@ -22,6 +22,11 @@ Contents
 
    README.md
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Test Setup Description
+
+   TestSetupDescription.md
 
 
 .. toctree::
@@ -32,7 +37,6 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Advanced Usage
+   :caption: Release Notes
 
-   documentation/MyDoc3.md
-   documentation/MyDoc4.md
+   documentation/ReleaseNotes.md

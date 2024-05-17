@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Usecase 1" href="MyDoc3.html" />
+    <link rel="next" title="Release Notes" href="ReleaseNotes.html" />
     <link rel="prev" title="Jupyter AI Toolkit" href="../README.html" /> 
 </head>
 
@@ -59,18 +59,15 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Functions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#start-and-stop-jupyter-lab">Start and Stop Jupyter Lab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#start-and-stop-your-python-project">Start and Stop your Python project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-management">User Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#install-more-packages">Install more packages</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Advanced Usage</span></p>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="MyDoc3.html">Usecase 1</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="MyDoc3.html#step-1">step 1</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="MyDoc4.html">Usecase 2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="MyDoc4.html#step-1">step 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ReleaseNotes.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ReleaseNotes.html#version-0-0-1">Version 0.0.1</a></li>
 </ul>
 </li>
 </ul>
@@ -95,7 +92,7 @@
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="../README.html" class="btn btn-neutral float-left" title="Jupyter AI Toolkit" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="MyDoc3.html" class="btn btn-neutral float-right" title="Usecase 1" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ReleaseNotes.html" class="btn btn-neutral float-right" title="Release Notes" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -111,17 +108,35 @@ You can access these pages from the ctrlX Dashboard sidebar as shown in the pict
 <section id="start-and-stop-jupyter-lab">
 <h2>Start and Stop Jupyter Lab<a class="headerlink" href="#start-and-stop-jupyter-lab" title="Permalink to this heading"></a></h2>
 <p>To start the Jupyter Server, go to the Jupyter Manager page and click on the green Start button under the Manager Jupyter section as shown in the picture. Similarly you can stop the server by clicking the red Stop button.</p>
-<p><img alt="manager" src="../_images/manager-page-1.png" /></p>
+<p><img alt="manager 1" src="../_images/manager-page-1.png" /></p>
 </section>
 <section id="start-and-stop-your-python-project">
 <h2>Start and Stop your Python project<a class="headerlink" href="#start-and-stop-your-python-project" title="Permalink to this heading"></a></h2>
 <p>You can choose a python file to be executed when the app starts. To do so, place a python file named “app.py” inside a folder named “project”, as shown in the following picture.</p>
 <p>You can also Start and Stop your file by using the relevant buttons in the Manage App section of the Jupyter Manager. If you would like to see the logs that your app generates, start the app using the yellow “Start with debug” button.</p>
-<p><img alt="manager" src="../_images/manager-page-2.png" /></p>
+<p><img alt="manager 2" src="../_images/manager-page-2.png" /></p>
+</section>
+<section id="user-management">
+<h2>User Management<a class="headerlink" href="#user-management" title="Permalink to this heading"></a></h2>
+<p>The User Management is included in the ctrlX Automation Platform. You can manage your users under Settings &gt; Users &amp; Permissions &gt; Users, as shown in the picture below.</p>
+<p><img alt="user management" src="documentation/doc_img/ctrlx-user-management.png" /></p>
 </section>
 <section id="install-more-packages">
 <h2>Install more packages<a class="headerlink" href="#install-more-packages" title="Permalink to this heading"></a></h2>
-<p>If you want to install more python packages…</p>
+<p>Jupyter AI Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
+If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON, SNAP_COMMON/solutions/activeConfiguration/mylibs.</p>
+<p>For example, to install opencv you can run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>pip3 install opencv-python -t $SNAP_DATA
+</pre></div>
+</div>
+<p>In your python code, make sure to add $SNAP_DATA to the system paths before importing opencv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;SNAP_DATA&#39;</span><span class="p">])</span>
+
+<span class="kn">import</span> <span class="nn">cv2</span>
+</pre></div>
+</div>
 <p>The following packages have been tested…</p>
 </section>
 </section>
