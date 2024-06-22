@@ -1,23 +1,23 @@
 # Basic Functions
-The app is made of two main pages, the Jupyter Lab and the Jupyter Manager.
-Jupyter Lab is where you can play with your python code, while Jupyter Manager is where you manage the Jupyter server and see your app's logs. 
-You can access these pages from the ctrlX Dashboard sidebar as shown in the picture. If you can not see the Jupyter Manager tab, it means that you don't have the full access permission. 
+The app is made of two main pages, the AI DEV Lab and the AI DEV Manager.
+AI DEV Lab is where you can play with your python code, while AI DEV Manager is where you manage the AI DEV Lab Server and see your app's logs. 
+You can access these pages from the ctrlX Dashboard sidebar as shown in the picture. If you can not see the AI DEV Manager tab, it means that you don't have the full access permission. 
 
 ![sidebar](./doc_img/ctrlx-sidebar.png)
 
-## Start and Stop Jupyter Lab
-To start the Jupyter Server, go to the Jupyter Manager page and click on the green Start button under the Manager Jupyter section as shown in the picture. Similarly you can stop the server by clicking the red Stop button.
+## Start and Stop AI DEV Lab
+To start the AI DEV Lab Server, go to the AI DEV Manager page and click on the green Start button under the Manage AI DEV Toolkit section as shown in the picture. Similarly you can stop the server by clicking the red Stop button.
 
 ![manager 1](./doc_img/manager-page-1.png)
 
-Once the Jupyter Server is started, you can open Jupyter Lab by clicking on the Open button or from the Sidebar.
+Once the AI DEV Lab Server is started, you can open AI DEV Lab by clicking on the Open button or from the Sidebar.
 
-![jupyter lab](./doc_img/jupyter-lab.png)
+![AI DEV Lab](./doc_img/jupyter-lab.png)
 
 ## Start and Stop your Python project
 You can choose a python file to be executed when the app starts. To do so, place a python file named "app.py" inside a folder named "project", as shown in the following picture. 
 
-You can also Start and Stop your file by using the relevant buttons in the Manage App section of the Jupyter Manager. If you would like to see the logs that your app generates, start the app using the yellow "Start with debug" button. 
+You can also Start and Stop your file by using the relevant buttons in the Manage App section of the AI DEV Manager. If you would like to see the logs that your app generates, start the app using the yellow "Start with debug" button. 
 
 ![manager 2](./doc_img/manager-page-2.png)
 
@@ -33,7 +33,7 @@ The app's data is stored inside the Active configuration folder.
 
 
 ## Install more packages
-Jupyter AI Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
+AI DEV Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
 If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON.
 If you want your packages to be backup together with the standard ctrlX mechanism, install them in the following folder or subfolder: `/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/jupyterlab`. 
 

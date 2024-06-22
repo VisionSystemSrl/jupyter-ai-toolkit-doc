@@ -1,5 +1,5 @@
-# Jupyter AI Toolkit
-Jupyter AI Toolkit is an app developed by Vision System Srl for the Bosch Rexroth ctrlX platform.
+# AI DEV Toolkit
+AI DEV Toolkit is an app developed by Vision System Srl for the Bosch Rexroth ctrlX platform.
 
 
 ## Installation
