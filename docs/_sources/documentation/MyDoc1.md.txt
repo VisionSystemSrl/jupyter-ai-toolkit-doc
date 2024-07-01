@@ -50,3 +50,6 @@ sys.path.append(os.environ['SNAP_DATA'])
 
 import cv2
 ```
+
+## Disclosure
+AI DEV Toolkit uses multiple ports that can increase power consumption and create potential security risks. It is the user's responsability to stop the app's functionalities when they are not using it.
