@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Jupyter-AI-Toolkit-doc'
+project = 'AI-DEV-Toolkit-doc'
 copyright = '2024, Vision System s.r.l.'
 author = 'Vision System s.r.l.'
 release = '0.1'

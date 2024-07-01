@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,9 +16,9 @@
   
         <script src="../_static/jquery.js?v=5d32c60e"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=e031e9a9"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+        <script src="../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +36,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Jupyter-AI-Toolkit-doc
+            AI-DEV-Toolkit-doc
               <img src="../_static/jupyter-ai-toolkit-512x512.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
@@ -73,6 +73,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ReleaseNotes.html">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="ReleaseNotes.html#version-0-0-1">Version 0.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ReleaseNotes.html#mylib-documentation">myLib documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -83,7 +84,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Jupyter-AI-Toolkit-doc</a>
+          <a href="../index.html">AI-DEV-Toolkit-doc</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -105,36 +106,36 @@
            <div itemprop="articleBody">
              
   <section id="basic-functions">
-<h1>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this heading"></a></h1>
+<h1>Basic Functions<a class="headerlink" href="#basic-functions" title="Link to this heading"></a></h1>
 <p>The app is made of two main pages, the AI DEV Lab and the AI DEV Manager.
 AI DEV Lab is where you can play with your python code, while AI DEV Manager is where you manage the AI DEV Lab Server and see your app’s logs.
 You can access these pages from the ctrlX Dashboard sidebar as shown in the picture. If you can not see the AI DEV Manager tab, it means that you don’t have the full access permission.</p>
 <p><img alt="sidebar" src="../_images/ctrlx-sidebar.png" /></p>
 <section id="start-and-stop-ai-dev-lab">
-<h2>Start and Stop AI DEV Lab<a class="headerlink" href="#start-and-stop-ai-dev-lab" title="Permalink to this heading"></a></h2>
+<h2>Start and Stop AI DEV Lab<a class="headerlink" href="#start-and-stop-ai-dev-lab" title="Link to this heading"></a></h2>
 <p>To start the AI DEV Lab Server, go to the AI DEV Manager page and click on the green Start button under the Manage AI DEV Toolkit section as shown in the picture. Similarly you can stop the server by clicking the red Stop button.</p>
 <p><img alt="manager 1" src="../_images/manager-page-1.png" /></p>
 <p>Once the AI DEV Lab Server is started, you can open AI DEV Lab by clicking on the Open button or from the Sidebar.</p>
 <p><img alt="AI DEV Lab" src="../_images/jupyter-lab.png" /></p>
 </section>
 <section id="start-and-stop-your-python-project">
-<h2>Start and Stop your Python project<a class="headerlink" href="#start-and-stop-your-python-project" title="Permalink to this heading"></a></h2>
+<h2>Start and Stop your Python project<a class="headerlink" href="#start-and-stop-your-python-project" title="Link to this heading"></a></h2>
 <p>You can choose a python file to be executed when the app starts. To do so, place a python file named “app.py” inside a folder named “project”, as shown in the following picture.</p>
 <p>You can also Start and Stop your file by using the relevant buttons in the Manage App section of the AI DEV Manager. If you would like to see the logs that your app generates, start the app using the yellow “Start with debug” button.</p>
 <p><img alt="manager 2" src="../_images/manager-page-2.png" /></p>
 </section>
 <section id="user-management">
-<h2>User Management<a class="headerlink" href="#user-management" title="Permalink to this heading"></a></h2>
+<h2>User Management<a class="headerlink" href="#user-management" title="Link to this heading"></a></h2>
 <p>The User Management is included in the ctrlX Automation Platform. You can manage your users under Settings &gt; Users &amp; Permissions &gt; Users, as shown in the picture below.</p>
 <p><img alt="user management" src="../_images/ctrlx-user-management.png" /></p>
 </section>
 <section id="data-persistence">
-<h2>Data persistence<a class="headerlink" href="#data-persistence" title="Permalink to this heading"></a></h2>
+<h2>Data persistence<a class="headerlink" href="#data-persistence" title="Link to this heading"></a></h2>
 <p>The app’s data is stored inside the Active configuration folder.</p>
 <p><img alt="data persistence" src="../_images/ctrlx-data-persistence.png" /></p>
 </section>
 <section id="install-more-packages">
-<h2>Install more packages<a class="headerlink" href="#install-more-packages" title="Permalink to this heading"></a></h2>
+<h2>Install more packages<a class="headerlink" href="#install-more-packages" title="Link to this heading"></a></h2>
 <p>AI DEV Toolkit comes with pre-installed python modules that are often used in Data Science and AI, e.g. numpy, matplotlib, scikit-learn, etc.
 If you need to install other packages, you can do so by using pip and specifying one of the following target folders: SNAP_DATA, SNAP_COMMON.
 If you want your packages to be backup together with the standard ctrlX mechanism, install them in the following folder or subfolder: <code class="docutils literal notranslate"><span class="pre">/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/jupyterlab</span></code>.</p>
